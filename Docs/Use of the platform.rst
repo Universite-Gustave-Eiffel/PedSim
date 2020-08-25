@@ -16,10 +16,8 @@ Obstacles
 Layers or pedestrian class
 ---------------------------
 
-Numerical Model
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Emission Numerical Model
+What can be changed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Traffic emission model
-----------------------
+* Tmax
+* some parameters and global variables (to see more put the link)
