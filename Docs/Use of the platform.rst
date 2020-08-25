@@ -15,3 +15,11 @@ Obstacles
 
 Layers or pedestrian class
 ---------------------------
+
+Numerical Model
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Emission Numerical Model
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Traffic emission model
+----------------------
