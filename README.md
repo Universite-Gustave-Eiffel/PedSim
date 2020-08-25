@@ -15,7 +15,7 @@
 ### Space discretization
 * Weno scheme
 * splitting method
-## Global and local direction 
+## Global and local direction https://github.com/Ifsttar/PedSim/blob/master/Docs/Flow%20equations%20and%20numerical%20scheme.rst 
 ### Fast marching method
 ### global and local direction 
 ## Parameters and global variables used
