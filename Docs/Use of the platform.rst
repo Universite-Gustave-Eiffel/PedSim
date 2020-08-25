@@ -1,11 +1,13 @@
-Numerical Model
+Use of the platform
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Emission Numerical Model
+To define 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Traffic emission model
+The domain
 ----------------------
-# To define the domain
-# To define the doors 
-# To define obstacles
-# To define the layers or pedestrian class
+The doors 
+----------------------
+Obstacles
+----------------------
+Layers or pedestrian class
+---------------------------
