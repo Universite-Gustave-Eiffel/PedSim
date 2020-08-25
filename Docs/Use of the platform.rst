@@ -3,11 +3,15 @@ Use of the platform
 
 To define 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 The domain
 ----------------------
+
 The doors 
 ----------------------
+
 Obstacles
 ----------------------
+
 Layers or pedestrian class
 ---------------------------
