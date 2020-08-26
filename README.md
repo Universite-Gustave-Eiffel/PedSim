@@ -5,6 +5,7 @@ Pedestrian traffic meets a lot of issue as daily operations optimization or mana
 We develop a platform coded in Python to model pedestrian flows. 
 
 # Functioning of the platform
+
 ## Use of the platform
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Use%20of%20the%20platform.rst "> To see more about the use of the platform <a/>
   
