@@ -5,7 +5,8 @@ Pedestrian traffic meets a lot of issue as daily operations optimization or mana
 We develop a platform coded in Python to model pedestrian flows. 
 
 # Functioning of the platform
-## How to use it?
+## Use of the platform
+<a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Use%20of%20the%20platform.rst "> To see more about Use of the platform <a/>)
 ## Test cases
 ## Results
 ## areas of improvement 
@@ -31,8 +32,8 @@ We use the paper of Hoogendoorn Serge P.et al., «Continuum theory for pedestria
 
 ## Boundaries conditions
 * Ghost cells
-## Parameters and global variables used
-<a href=""> Parameters and global variables used<a/>
+## Global variables and parameters used
+<a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Global%20variables%20and%20parameters%20used.rst "> Parameters and global variables used<a/>
 ## Bibliography 
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Bibliography.rst"> Bibliography<a/>
 
