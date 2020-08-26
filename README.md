@@ -45,7 +45,6 @@ We use the paper of Hoogendoorn Serge P.et al., «Continuum theory for pedestria
 
 
 # Computer programming
-<a href=""> To see more about <a/>
 
 ## Functions
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Functions.rst"> To see more about functions <a/>
