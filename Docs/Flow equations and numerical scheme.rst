@@ -8,6 +8,10 @@ Weno method
 Dimensionnal splitting
 TVD 
 
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/Docs/images/Figure_7.png
+   :height: 600px
+   :align: center
+
 (### Time discretization
 
 Runge Kutta ### Space discretization * Weno scheme * splitting method) To see more about Flow equations and numerical scheme
