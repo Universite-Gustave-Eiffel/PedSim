@@ -4,8 +4,13 @@ Pedestrian traffic meets a lot of issue as daily operations optimization or mana
 
 We develop a platform coded in Python to model pedestrian flows. 
 
+The built model is macroscopic dynamic, so we consider the traffic as a continuous flow, and pedestrians’ general behavior is treated by analogy to transport models in fluid dynamics. The equilibrium relation links pedestrians’ speed with their density. 
+
+Pedestrians are divided into differents layers according to their original direction, that is to say according to their entrance and exit doors. Thus, we compute separately the pedestrian density of each layer before the global density.
+
 # Functioning of the platform
-The platform enables to describe the pedestrian traffic evolution in a network. 
+The platform enables to describe the pedestrian traffic evolution in a network. The latter is modelised by a mesh. So, we compute the pedestrian density in each cell of the mesh for each layer. The code returns the global density at each time step. For some of them, it displays for each layer, the layer density (so the pedestrian flow for each pedestrian class), and the global density (so the general pedestrian traffic).
+
 ## Use of the platform
 It is suitable to a large serie of test cases. Users can define the domain, entrances, exits, the number of layer, obstacles. 
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Use%20of%20the%20platform.rst "> To see more about the use of the platform <a/>
@@ -19,9 +24,8 @@ The code integrates several test cases to become aware of what the platform can 
 
 # Models and assumptions used to develop the platform
 ## Flow equations and numerical scheme
-The built model is macroscopic dynamic, so we consider the traffic as a continuous flow, and pedestrians’ general behavior is treated by analogy to transport models in fluid dynamics.
 
-The equilibrium relation links pedestrians’ speed with their density. We essentially used flow equations and numerical schemes described in Stéphane Mollier’s thesis, « Two-dimensional models for large-scale traffic networks » [1] to construct the model.
+We essentially used flow equations and numerical schemes described in Stéphane Mollier’s thesis, « Two-dimensional models for large-scale traffic networks » [1] to construct the model.
 
 (### Time discretization
 * Runge Kutta ### Space discretization * Weno scheme * splitting method)
