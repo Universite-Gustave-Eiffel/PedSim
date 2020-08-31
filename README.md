@@ -6,17 +6,17 @@ We develop a platform coded in Python to model pedestrian flows.
 
 The built model is macroscopic dynamic, so we consider the traffic as a continuous flow, and pedestrians’ general behavior is treated by analogy to transport models in fluid dynamics. The equilibrium relation links pedestrians’ speed with their density. 
 
-Pedestrians are divided into differents layers according to their original direction, that is to say according to their entrance and exit doors. Thus, we compute separately the pedestrian density of each layer before the global density.
+Pedestrians are divided into different layers according to their original direction, that is to say, according to their entrance and exit doors. Thus, we separately compute the pedestrian density of each layer before the global density.
 
 # Functioning of the platform
-The platform enables to describe the pedestrian traffic evolution in a network. The latter is modelised by a mesh. So, we compute the pedestrian density in each cell of the mesh for each layer. The code returns the global density at each time step. For some of them, it displays for each layer, the layer density (so the pedestrian flow for each pedestrian class), and the global density (so the general pedestrian traffic).
+The platform enables us to describe the pedestrian traffic evolution in a network. A mesh modelizes the latter. So, we compute the pedestrian density in each cell of the mesh for each layer. The code returns the global density at each time step. For some of them, it displays for each layer, the layer density (so the pedestrian flow for each pedestrian class), and the global density (so the general pedestrian traffic).
 
 ## Use of the platform
-It is suitable to a large serie of test cases. Users can create a new one by defining the domain, entrances, exits, the number of layer, obstacles. 
+It is suitable for many test cases. Users can create a new one by defining the domain, entrances, exits, the number of layers, obstacles. 
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Use%20of%20the%20platform.rst "> To see more about the use of the platform <a/>
   
 ## Test cases
-The code integrates several test cases to become aware of what the platform can provide. Thus, there are simple tests with only two layers to look precisely what happens at crossing points. We also find test cases with multiple layers and some where pedestrian demands are fluctuate over time.
+The code integrates several test cases to become aware of what the platform can provide. Thus, there are simple tests with only two layers to examine what precisely happens at crossing points. We also find test cases with multiple layers, and somewhere pedestrian demands fluctuate over time.
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Test%20cases.rst"> To see more about the different test cases <a/>
 
 ## Areas of improvement
