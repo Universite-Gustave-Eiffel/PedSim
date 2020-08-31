@@ -12,7 +12,7 @@ Pedestrians are divided into differents layers according to their original direc
 The platform enables to describe the pedestrian traffic evolution in a network. The latter is modelised by a mesh. So, we compute the pedestrian density in each cell of the mesh for each layer. The code returns the global density at each time step. For some of them, it displays for each layer, the layer density (so the pedestrian flow for each pedestrian class), and the global density (so the general pedestrian traffic).
 
 ## Use of the platform
-It is suitable to a large serie of test cases. Users can define the domain, entrances, exits, the number of layer, obstacles. 
+It is suitable to a large serie of test cases. Users can create a new one by defining the domain, entrances, exits, the number of layer, obstacles. 
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Use%20of%20the%20platform.rst "> To see more about the use of the platform <a/>
   
 ## Test cases
