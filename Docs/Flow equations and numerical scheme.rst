@@ -8,9 +8,9 @@ Weno method
 Dimensionnal splitting
 TVD 
 
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/Docs/images/Figure_7.png
+(.. figure:: lien
    :height: 600px
-   :align: center
+   :align: center)
 
 (### Time discretization
 
