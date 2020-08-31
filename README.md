@@ -13,9 +13,6 @@ It is suitable to a large serie of test cases. Users can define the domain, entr
 ## Test cases
 The code integrates several test cases to become aware of what the platform can provide. Thus, there are simple tests with only two layers to look precisely what happens at crossing points. We also find test cases with multiple layers and some where pedestrian demands are fluctuate over time.
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Test%20cases.rst"> To see more about the different test cases <a/>
-  
-## Results
-<a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Results.rst"> To see more about results <a/>
 
 ## Areas of improvement
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Areas%20of%20improvement.rst "> To see more about areas of improvement<a/>)
