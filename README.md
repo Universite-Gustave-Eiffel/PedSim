@@ -5,12 +5,14 @@ Pedestrian traffic meets a lot of issue as daily operations optimization or mana
 We develop a platform coded in Python to model pedestrian flows. 
 
 # Functioning of the platform
-
+The platform enables to describe the pedestrian traffic evolution in a network. 
 ## Use of the platform
+It is suitable to a large serie of test cases. Users can define the domain, entrances, exits, the number of layer, obstacles. 
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Use%20of%20the%20platform.rst "> To see more about the use of the platform <a/>
   
 ## Test cases
-<a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Test%20cases.rst"> To see more about test cases <a/>
+The code integrates several test cases to become aware of what the platform can provide. Thus, there are simple tests with only two layers to look precisely what happens at crossing points. We also find test cases with multiple layers and some where pedestrian demands are fluctuate over time.
+<a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Test%20cases.rst"> To see more about the different test cases <a/>
   
 ## Results
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Results.rst"> To see more about results <a/>
