@@ -44,9 +44,91 @@ lagrangian interpolation???
 
 lien pour boundary conditions
 
-Functions for numerical schemes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To define test case
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To define test case
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Functions for flow equations and numerical schemes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To estimate speed thanks to the fundamental diagram
+----------------------------------------------------
+
+def estimate_speed(rho):
+  return v_d
+  
+To compute flux
+-----------------
+
+def compute_flux(rho):
+  return f 
+?????
+
+Functions for WENO
+-------------------------------------------
+
+- To compute smoothness indicators for WENO
+def smoothness_indicator(den):
+  return beta
+
+- To build stencils for WENO
+def construct_stencils(nx, ny):
+  return xstencils, ystencils
+ 
+ - To reconstruct WENO
+def WENO_scheme(density, stencils):
+  return np.sum(denlAll * weightL, axis=0), np.sum(denrAll * weightR, axis=0)
+
+To compute Lax_Friedrich scheme
+---------------------------------
+
+def lax_friedrich_flux(density, mesh, direction, phi_x, phi_y, xstencils, ystencils):
+  return fij
+It uses 
+
+Function for the dimensional splitting
+---------------------------------------
+
+def dimensional_splitting(density, F_i_j, dt, mesh, direction):
+  return density
+
+lien pour flow equations and numerical schemes
+
+Functions for computing the direction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- def crowdedness_direction(nlayers, densities, layer):
+    return gradpsi
+ ????????????
+
+To compute the fast marching scheme
+-------------------------------------
+
+def fast_marching_scheme(density, mesh, layer, nlayers, densities):
+  return -gradphi[1], -gradphi[0]
+
+To compute the direction vectors
+---------------------------------
+ 
+def compute_direction_vectors(density, mesh, theta, layer, nlayers, densities):
+  return phi_x, phi_y
+
+General loop
+~~~~~~~~~~~~~~
+
+Time integration loop
+----------------------
+
+def time_integration(domain, mesh, demands, directions, nlayers):
+  return alldensities
+  
+Main function
+----------------------
+
+def main():
+
+lien boucle général
+  
+To plot solution
+~~~~~~~~~~~~~~~~~~~
+
+To plot snapshots of solution
+-------------------------------
+
+def plot_solution(domain, solution, nlayers):
