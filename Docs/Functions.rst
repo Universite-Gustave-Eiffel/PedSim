@@ -1,20 +1,3 @@
-Global variables and parameters ued
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Global variables
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-rho_j = 2.4 ped/m^2
-rho_c = 1.2 ped/m^2
-vmax = 1.34 m/s
-w = rho_c * vmax / (rho_j - rho_c)  m/s
-largeur_porte = 1 m
-
-Parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Crowdedness model parameters
-------------------------------
 Functions
 ^^^^^^^^^^
 
@@ -30,12 +13,14 @@ def test_cases ():
 
 To define the geometry of the domain
 ---------------------------------------
+
 def create_geo():
   if the number of the geo_case exists, return domain, obstacles
   else, return None
   
 To generate a rectangular finite volume grid
 ----------------------------------------------
+
 def generate_mesh(domain, inflows, outflows, obstacles, nlayers):
   return mesh
 (préciser tout ce que le mesh contient)
