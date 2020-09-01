@@ -1,6 +1,3 @@
-Get Started - Tutorial
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -9,7 +6,7 @@ Functions to use the platform
 
 
 To define test case
-----------------------
+----------------------------------------------------
 
 def test_cases ():
   if the number of the test case exists, return entrance_doors_coord, exit_doors_coord, list_direction, demand, num_layers
@@ -17,7 +14,7 @@ def test_cases ():
 (entrance_doors_coord and exit_doors_coord are called inflows and outflows too)
 
 To define the geometry of the domain
----------------------------------------
+-------------------------------------------------
 
 def create_geo():
   if the number of the geo_case exists, return domain, obstacles
@@ -35,6 +32,7 @@ lien pour note to the user
 Functions for boundaries conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 To get time derivates of boundary conditions
 ----------------------------------------------
 
@@ -42,6 +40,7 @@ def time_derivative_bc(t, direction):
   if the number of the geo_case exists, return time_der
   else, return None
   
+
 To compute density values in ghost cells
 -------------------------------------------
 
@@ -126,14 +125,14 @@ General loop
 ~~~~~~~~~~~~~~
 
 Time integration loop
-----------------------
+------------------------------
 
 def time_integration(domain, mesh, demands, directions, nlayers):
   return alldensities
 It uses construct_stencils (nx, ny), lax_friedrich_flux (density, mesh, dimension, phi_x, phi_y, xstencils, ystencils), dimensionnal_splitting (density, fij, dt, mesh, dimension), compute_direction_vectors(sumdensities, mesh, theta, layer, nlayers, densities)
   
 Main function
-----------------------
+-----------------------------------
 
 def main():
 
@@ -143,7 +142,7 @@ It uses test_cases (), create_geo (), generate_mesh (domain, inflows, outflows, 
 lien boucle général
   
 To plot solution
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To plot snapshots of solution
 -------------------------------
