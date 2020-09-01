@@ -25,7 +25,7 @@ The Weighted Essentially Non-Oscillatory (WENO) method is a way to interpolate t
 Thanks to the Weno method we get densities needed to compute the flux at the interface using the Lax-Friedrichs Flux.
 
 Lax-Friedrichs Flux
---------------------------
+-------------------------
 
 We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow:
    F_i+1/2, j = 1/2 ( Φ(ρ_i+1_moins,j) + Φ(ρ_i_plus,j) - vmax (ρ_i_plus,j - ρ_i+1_moins,j)) 
