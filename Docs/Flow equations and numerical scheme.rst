@@ -7,11 +7,11 @@ The model combines a time discretization with a step time dt and a space discret
 
 The density in each cell is defined as ρ_i,j.
 
-flux [Φ = v (vector) * ρ] = veh/s/m (vector)
-density [ρ] = veh/m2 (scalar)
-velocity [v] = m/s (vector)
-equation ∂tρ + ∇ · Φ( ~ t, x, y, ρ) = 0
-table 1.1 [1]
+   flux [Φ = v (vector) * ρ] = veh/s/m (vector)
+   density [ρ] = veh/m2 (scalar)
+   velocity [v] = m/s (vector)
+   equation ∂tρ + ∇ · Φ( ~ t, x, y, ρ) = 0
+   table 1.1 [1]
 
 Space discretization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,20 +47,12 @@ We consider:
    p_i_j_next = p_i_j_int + dt/dy * (sin(teta_i,j-1/2) * F_i,j-1/2_int - sin(teta_i,j+1/2) * F_i,j+1/2_int)
   
 
-Space discretization
+Time discretization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Dimensionnal splitting
---------------------------
 
+Total Variation Diminishing (TVD) Runge-Kutta
+------------------------------------------------
 
+This is a third order method.
 
-
-
-TVD 
-
-
-
-(### Time discretization
-
-Runge Kutta ### Space discretization * Weno scheme * splitting method) To see more about Flow equations and numerical scheme
