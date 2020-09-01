@@ -1,3 +1,20 @@
+Global variables and parameters ued
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Global variables
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+rho_j = 2.4 ped/m^2
+rho_c = 1.2 ped/m^2
+vmax = 1.34 m/s
+w = rho_c * vmax / (rho_j - rho_c)  m/s
+largeur_porte = 1 m
+
+Parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Crowdedness model parameters
+------------------------------
 Functions
 ^^^^^^^^^^
 
