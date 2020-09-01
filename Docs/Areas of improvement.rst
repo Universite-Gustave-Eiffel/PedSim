@@ -9,3 +9,8 @@ A1
 
 the fast marching method? 
 réfléchir au regard critique !!!!
+
+
+AA
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
