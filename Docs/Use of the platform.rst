@@ -1,21 +1,31 @@
 Use of the platform
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To define 
+To define the geometry of domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The domain
 ----------------------
 
-The doors 
-----------------------
-
 Obstacles
 ----------------------
 
-Layers or pedestrian class
+To define a test case
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The demand
+----------------------
+We can have three different phases of demand for each layer. So, the demand is a list of lists. The lenght of the list is equal to the number of layers and the lenght of each sub list is equal to three (the three possible phases of demand).
+
+The doors 
+----------------------
+
+
+The initial direction
 ---------------------------
 
+Layers or pedestrian class
+---------------------------
 
 What can be changed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
