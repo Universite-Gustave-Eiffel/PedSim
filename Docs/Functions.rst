@@ -1,11 +1,11 @@
 Functions
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^
 
 Functions to use the platform
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To define test case
-------------------------------
+----------------------
 
 def test_cases ():
   if the number of the test case exists, return entrance_doors_coord, exit_doors_coord, list_direction, demand, num_layers
