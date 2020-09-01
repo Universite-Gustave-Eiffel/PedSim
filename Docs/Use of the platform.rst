@@ -19,20 +19,19 @@ We can have three different phases of demand for each layer. So, the demand is a
 
 The doors 
 ----------------------
-
+We have to define the number of entrance doors and exit doors and their coordinated. For each layer we have to give an entrance and an exit door even if they are the same. Each door are defined by a list of two lists. The first sub list gives the x coordinates of the door and the second one the y coordinates. Thus, entrance_doors_coord and exit_doors_coord are a list of the different doors.
 
 The initial direction
 ---------------------------
+l'enlever à priori????
 
-Layers or pedestrian class
----------------------------
+The number of layers or pedestrian class
+------------------------------------------
+We give the number of the layer.
 
-What can be changed
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Tmax
-* some parameters and global variables (to see more put the link)
-Tmax = 40.0
-geo_case = 1
+
+        l'exemple
+        geo_case = 1
 test_case = 6
         demand = [0.5 * rho_c * vmax * largeur_porte]  # ped/s
 
@@ -59,3 +58,10 @@ geo_case == 1:
 
         # give coordinates of [x0, xn] and [y0, yn]
         obstacles = []
+
+What can be changed
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We have to put the number of the test case, the number of the geo case we want to run and Tmax.
+There are some parameters you can change too (see more about parameters).
+ 
+
