@@ -75,22 +75,29 @@ Functions for WENO
 - To compute smoothness indicators for WENO
 def smoothness_indicator(den):
   return beta
+den is a column matrix in y direction and a row matrix in x direction.
+beta is a matrix of the beta needed to compute WENO_scheme in one row or in one column.
 
 - To build stencils for WENO
 def construct_stencils(nx, ny):
   return xstencils, ystencils
+x stencils is a matrix of the stencils needed to apply WENO-scheme in a row and y stencil is a matrix of the stencils needed to apply WENO-scheme in a column.
  
  - To reconstruct WENO
 def WENO_scheme(density, stencils):
   return np.sum(denlAll * weightL, axis=0), np.sum(denrAll * weightR, axis=0)
-It uses smoothness_indicator (density)
+It returns denl, denr wich are column matrix if we use WENO_scheme in y direction and row matrix if we use it in x direction.
+density is a column matrix in y direction and a row matrix in x direction. stencils is a matrix of the stencils for a row or for a column. 
+It uses smoothness_indicator (density).
 
 To compute Lax_Friedrich scheme
 ---------------------------------
 
 def lax_friedrich_flux(density, mesh, direction, phi_x, phi_y, xstencils, ystencils):
   return fij
-It uses compute_flux (denl), compute_flux (denr), WENO_scheme (den, xstencils), WENO_scheme (phi, xstencils), WENO_scheme (den, ystencils), WENO_scheme (phi, ystencils)
+fij is a matrix of all the flux at the interface between two cells in x direction or in y direction.
+It uses WENO_scheme(density, stencils) for each row if the direction == x or for each column if direction == y.
+It uses compute_flux (denl), compute_flux (denr)
 
 Function for the dimensional splitting
 ---------------------------------------
@@ -129,7 +136,9 @@ Time integration loop
 
 def time_integration(domain, mesh, demands, directions, nlayers):
   return alldensities
-It uses construct_stencils (nx, ny), lax_friedrich_flux (density, mesh, dimension, phi_x, phi_y, xstencils, ystencils), dimensionnal_splitting (density, fij, dt, mesh, dimension), compute_direction_vectors(sumdensities, mesh, theta, layer, nlayers, densities)
+It uses construct_stencils (nx, ny). 
+It uses lax_friedrich_flux (density, mesh, dimension, phi_x, phi_y, xstencils, ystencils) for each direction, for the three TVD's steps for each time step.
+It uses dimensionnal_splitting (density, fij, dt, mesh, dimension), compute_direction_vectors(sumdensities, mesh, theta, layer, nlayers, densities)
   
 Main function
 -----------------------------------
