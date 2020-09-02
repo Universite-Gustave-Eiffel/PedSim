@@ -65,6 +65,10 @@ This is a third order method.
 Boundary conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+We use the fifth order finite difference WENO scheme wich uses the five neighboring densities. So, we need three rows of ghost points above and below the mesh boundary and three colums of ghost points on the right and on the lesft of the mesh boundary.
+
+At the inflow boundary, we use an inverse Lax-Wendroff procedure that is to say we construct a Sth order approximation of ghost potnt values by a Taylor expression. In our code S=4. [3]
+
 
 
 
