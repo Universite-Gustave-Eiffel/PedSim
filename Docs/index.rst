@@ -77,3 +77,13 @@ We first compute the pedestrian direction with the fast marching method. We assu
     Docs/Global and local direction
     
 make html
+# .readthedocs.yml
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+# Required
+version: 2
+
+# Build documentation in the docs/ directory with Sphinx
+sphinx:
+  configuration: docs/conf.py
