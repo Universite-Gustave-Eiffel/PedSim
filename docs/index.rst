@@ -65,25 +65,20 @@ We first compute the pedestrian direction with the fast marching method. We assu
     :caption: Functionning of the platform
     
     Docs/Use of the platform
-    Docs/Test cases
-    Docs/Areas of improvement
+    docs/Test cases
+    docs/Areas of improvement
     
 
 .. toctree::
     :maxdepth: 3
     :caption: Model and assumptions used to develop the platform
 
-    Docs/Flow equations, numerical schemes, and boundary conditions
-    Docs/Global and local direction
+    docs/Flow equations, numerical schemes, and boundary conditions
+    docs/Global and local direction
     
 make html
 .readthedocs.yml
 Read the Docs configuration file
 See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 
-Required
-version: 2
 
-Build documentation in the docs/ directory with Sphinx
-sphinx:
-  configuration: docs/conf.py
