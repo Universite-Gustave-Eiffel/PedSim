@@ -13,3 +13,5 @@
 
     Docs/Flow equations, numerical schemes, and boundary conditions
     Docs/Global and local direction
+    
+make html
