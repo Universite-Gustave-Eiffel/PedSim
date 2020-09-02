@@ -17,17 +17,7 @@ sphinx:
 #mkdocs:
 #  configuration: mkdocs.yml
 
-python:
-   version: 3.7
-   install:
-      - requirements: docs/requirements.txt
-      - method: pip
-        path: .
-        extra_requirements:
-            - docs
-      - method: setuptools
-        path: another/package
-   system_packages: true
+
 
 # Optionally build your docs in additional formats such as PDF
 formats:
