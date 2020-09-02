@@ -66,7 +66,7 @@ To compute flux
 def compute_flux(rho):
   return f
 rho is a density matrix.
-?????
+
 It uses estimate_speed (rho[np.logical_and(rho <= rho_j, rho > 0)])
 
 Functions for WENO
@@ -115,7 +115,7 @@ To compute the fast marching scheme
 
 def crowdedness_direction(nlayers, densities, layer):
     return gradpsi
- ????????????
+
 
 def fast_marching_scheme(density, mesh, layer, nlayers, densities):
   return -gradphi[1], -gradphi[0]
