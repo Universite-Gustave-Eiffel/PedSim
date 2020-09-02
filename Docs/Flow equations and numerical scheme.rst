@@ -29,7 +29,10 @@ formule in [3]
 Lax-Friedrichs Flux
 -------------------------
 
-We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow: F_i+1/2, j = 1/2 ( Φ(ρ_i+1_moins,j) + Φ(ρ_i_plus,j) - vmax (ρ_i_plus,j - ρ_i+1_moins,j)) equation 4.13 [1]
+We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow: 
+
+   F_i+1/2, j = 1/2 ( Φ(ρ_i+1_moins,j) + Φ(ρ_i_plus,j) - vmax (ρ_i_plus,j - ρ_i+1_moins,j)) 
+   equation 4.13 [1]
    
 
 Dimensionnal splitting
