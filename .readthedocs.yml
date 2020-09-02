@@ -9,6 +9,10 @@ version: 2
 sphinx:
   configuration: docs/conf.py
 
+
+  builder: html
+  
+  fail_on_warning: true
 # Build documentation with MkDocs
 #mkdocs:
 #  configuration: mkdocs.yml
