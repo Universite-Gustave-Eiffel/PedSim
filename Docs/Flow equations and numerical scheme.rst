@@ -23,7 +23,8 @@ WENO method
 
 The Weighted Essentially Non-Oscillatory (WENO) method is a way to interpolate the discrete density. It is a high order numerical method wich computes the density values at the interface of the cells (ρ_right and ρ_left) thanks to a spatial polynomial using the five neighboring densities. 
 Thanks to the Weno method we get densities needed to compute the flux at the interface using the Lax-Friedrichs Flux.
-formule in [3]
+formule in [3].
+This method is stable under standard CFL conditions.
 
 
 Lax-Friedrichs Flux
@@ -60,7 +61,11 @@ We need a method wich maintain stability
 Total Variation Diminishing (TVD) Runge-Kutta
 ------------------------------------------------
 
-This is a third order method.
+The TVD provides that the total variation of the solution does not increase in avoiding new extrema creation.
+We use the third order.
+
+described here
+
 
 Boundary conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
