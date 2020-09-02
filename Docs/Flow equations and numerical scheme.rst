@@ -23,6 +23,8 @@ WENO method
 
 The Weighted Essentially Non-Oscillatory (WENO) method is a way to interpolate the discrete density. It is a high order numerical method wich computes the density values at the interface of the cells (ρ_right and ρ_left) thanks to a spatial polynomial using the five neighboring densities. 
 Thanks to the Weno method we get densities needed to compute the flux at the interface using the Lax-Friedrichs Flux.
+formule in [3]
+
 
 Lax-Friedrichs Flux
 -------------------------
