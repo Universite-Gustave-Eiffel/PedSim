@@ -21,16 +21,16 @@ The code integrates several test cases to become aware of what the platform can 
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Areas%20of%20improvement.rst "> To see more about areas of improvement<a/>)
 
 # Models and assumptions used to develop the platform
-## Flow equations, numerical schemes and boundary conditions
+## Flow equations, numerical schemes, and boundary conditions
 
-We essentially used flow equations and numerical schemes described in Stéphane Mollier’s thesis, « Two-dimensional models for large-scale traffic networks » [1] to construct the model. Thus, we use the WENO scheme, the total variation diminishing (TVD) Runge Kutta time discretization and the dimensionnal spltting. It is a fifth-order method in space and a third-order in time. That provides us the convergence, stability and consistency of the solution. 
+We essentially used flow equations and numerical schemes described in Stéphane Mollier’s thesis, « Two-dimensional models for large-scale traffic networks » [1] to construct the model. Thus, we use the WENO scheme, the total variation diminishing (TVD) Runge Kutta time discretization, and the dimensional splitting. It is a fifth-order method in space and a third-order in time. That provides us the convergence, stability, and consistency of the solution. 
 
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Flow%20equations%20and%20numerical%20scheme.rst "> To see more aboutFlow equations, numerical schemes and boundary conditions<a/>
 
 ## Global and local direction 
 We use the paper of Hoogendoorn Serge P.et al., «Continuum theory for pedestrian traffic flow: Local route choice modeling and its implications » [2] about the pedestrian direction. It includes a global component determined before their start and a local one that adjusts the original direction according to local variations. 
 
-We first compute the pedestrian direction with the fast marching method. We assume the presomption that pedestrian will use the shortest way that is to say the one with the lowest travel time wich takes into account the distance and the delay caused by high density. We add a local term reflecting the fact that pedestrians will try to avoid pedestrians who do not have the same direction as them (not the same layer).
+We first compute the pedestrian direction with the fast marching method. We assume the presumption that pedestrians will use the shortest way, that is to say, the one with the lowest travel time, which takes into account the distance and the delay caused by high density. We add a local term reflecting that pedestrians will try to avoid pedestrians who do not have the same direction as them (not the same layer).
 
 <a href="https://github.com/Ifsttar/PedSim/blob/master/Docs/Flow%20equations%20and%20numerical%20scheme.rst"> To see more about global and local direction<a/>
 
