@@ -55,6 +55,7 @@ We consider:
 Time discretization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+We need a method wich maintain stability
 
 Total Variation Diminishing (TVD) Runge-Kutta
 ------------------------------------------------
