@@ -32,9 +32,11 @@ Lax-Friedrichs Flux
 We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow:
    F_i+1/2, j = 1/2 ( Φ(ρ_i+1_moins,j) + Φ(ρ_i_plus,j) - vmax (ρ_i_plus,j - ρ_i+1_moins,j)) 
    equation 4.13 [1]
+   
 
 Dimensionnal splitting
 --------------------------
+
 
 The dimensionnal splitting is a method that allows to compute a two-dimensional flux by computing first in one dimension and then in the other. Thus, we compute the flux first in x-dimension, then all the densities are updated. Next, we compute the flux in y dimension and update all the densities.
 
