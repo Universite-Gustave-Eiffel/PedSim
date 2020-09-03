@@ -16,29 +16,10 @@ The density in each cell is defined as ρ_i,j.
 Space discretization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-schéma comme figure 4.2 [1] p 76
-
-WENO method
-----------------------
-
-The Weighted Essentially Non-Oscillatory (WENO) method is a way to interpolate the discrete density. It is a high order numerical method that computes the density values at the interface of the cells (ρ_right and ρ_left) thanks to a spatial polynomial using the five neighboring densities. 
-Thanks to the Weno method, we get the densities needed to compute the flux at the interface using the Lax-Friedrichs Flux.
-The formula in [3].
-This method is stable under standard CFL conditions.
-
-
-Lax-Friedrichs Flux
--------------------------
-
-We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow: 
-
-   F_i+1/2, j = 1/2 ( Φ(ρ_i+1_moins,j) + Φ(ρ_i_plus,j) - vmax (ρ_i_plus,j - ρ_i+1_moins,j)) 
-   equation 4.13 [1]
-   
+schéma comme figure 4.2 [1] p 76   
 
 Dimensional splitting
 --------------------------
-
 
 The dimensional splitting is a method that allows us to compute a two-dimensional flux by calculate it first in one dimension and then in the other. Thus, we compute the flux first in x-dimension, then all the densities are updated. Next, we calculate it in y dimension and update all the densities.
 
@@ -51,7 +32,22 @@ We consider:
    Equation 4.14 [1]
    p_i_j_int = p_i_j_prev + dt/dx * (cos(teta_i-1/2,j) * F_i-1/2,j_prev - cos(teta_i+1/2,j) * F_i+1/2,j_prev)
    p_i_j_next = p_i_j_int + dt/dy * (sin(teta_i,j-1/2) * F_i,j-1/2_int - sin(teta_i,j+1/2) * F_i,j+1/2_int)
-  
+
+Lax-Friedrichs Flux
+-------------------------
+
+We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow: 
+
+   F_i+1/2, j = 1/2 ( Φ(ρ_i+1_moins,j) + Φ(ρ_i_plus,j) - vmax (ρ_i_plus,j - ρ_i+1_moins,j)) 
+   equation 4.13 [1]
+
+WENO method
+----------------------
+
+The Weighted Essentially Non-Oscillatory (WENO) method is a way to interpolate the discrete density. It is a high order numerical method that computes the density values at the interface of the cells (ρ_right and ρ_left) thanks to a spatial polynomial using the five neighboring densities. 
+Thanks to the Weno method, we get the densities needed to compute the flux at the interface using the Lax-Friedrichs Flux.
+The formula in [3].
+This method is stable under standard CFL conditions.
 
 Time discretization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,7 +68,7 @@ Boundary conditions
 
 We use the fifth-order finite difference WENO scheme, which uses the five neighboring densities. So, we need three rows of ghost points above and below the mesh boundary and three columns of ghost points on the right and the left of the mesh boundary.
 
-At the inflow boundary, we use an inverse Lax-Wendroff procedure to say we construct an Sth order approximation of ghost point values by a Taylor expression. In our code, S=4. [3]
+At the inflow boundary, we use an inverse Lax-Wendroff procedure that is to say we construct an Sth order approximation of ghost point values by a Taylor expression. In our code, S=4. [3]
 
   
 
