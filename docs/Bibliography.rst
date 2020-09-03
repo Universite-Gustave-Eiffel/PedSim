@@ -4,6 +4,3 @@
 [4]	TORO Eleuterio F. Riemann Solvers and Numerical Methods for Fluid Dynamics. Third Edition. Springer-Verlag Berlin Heidelberg, 2009. 
 [5]	GOTTLIEB Sigal, SHU Chi-Wang. Total variation diminishing Runge-Kutta schemes.
 
-[6]	 MATHEMATICS OF COMPUTATIONVolume 67, Number 221, January 1998, Pages 73–85S 0025-5718(98)00913-2TOTAL VARIATION DIMINISHING RUNGE-KUTTA SCHEMESSIGAL GOTTLIEB AND CHI-WANG SH
-[7]	Frirjirj
-
