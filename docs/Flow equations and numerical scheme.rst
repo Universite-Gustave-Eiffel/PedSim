@@ -7,17 +7,14 @@ The model combines a time discretization with a step time dt and a space discret
 
 The density in each cell is defined as ρ_i,j.
 
-Figures come from [1]
+Figure comes from [1]
 
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/figure%204.2%20%5B1%5D%20p%2076.png
    :align: center
    
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/table%201%201.png
-   :align: center
-   
+ 
 Space discretization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 Dimensional splitting
 --------------------------
@@ -30,17 +27,21 @@ We consider:
 - p_i_j_next the density value for the cell i,j for the layer n  after we compute the density in y_dimension
 - F_i-1/2,j_prev the flux (Lax-Friedrichs Flux ) at the interface between the cell i, j, and the cell i-1, j for the layer n before we apply the dimensional splitting method.
 
-The two steps are described in equation 4.14 [1].
-   
+It is described in equation (4.14) from [1].
 
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/4.14.png
+   :align: center
+
+   
 Lax-Friedrichs Flux
 -------------------------
 
-We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow: 
+We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow in equation (4.13) from [1]: 
+
 
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/4.13.png
    :align: center
-   equation 4.13 [1]
+   
 
 WENO method
 ----------------------
@@ -59,7 +60,7 @@ Total Variation Diminishing (TVD) Runge-Kutta
 ------------------------------------------------
 
 The TVD provides that the total variation of the solution does not increase in avoiding new extrema creation.
-We use the third order. Thus there are three time steps in each step written in equation (4.16) [1]. You can find more descriptions in [5].
+We use the third order. Thus there are three time steps in each step. The equations are described can be find in [5].
 
 
 Boundary conditions
