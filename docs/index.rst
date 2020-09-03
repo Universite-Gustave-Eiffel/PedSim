@@ -54,37 +54,3 @@ We first compute the pedestrian direction with the fast marching method. We assu
 
 
 
-.. _here: https://github.com/Ifsttar/PedSim
-
-.. _almost compliant: index.rst
-
-.. _GPL 3 license: License.html
-
-
-.. toctree::
-    :maxdepth: 3
-    :caption: Functionning of the platform
-    
-    docs/Use of the platform
-    docs/Test cases
-    docs/Areas of improvement
-    
-
-.. toctree::
-    :maxdepth: 3
-    :caption: Model and assumptions used to develop the platform
-
-    docs/Flow equations, numerical schemes, and boundary conditions
-    docs/Global and local direction
-    docs/Global variables and parameters used
-    docs/Bibliography 
-    
-.. toctree::
-    :maxdepth: 3
-    :caption: Computer programming
-    
-    docs/Functions
-    docs/General loop
-
-
-
