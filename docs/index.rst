@@ -76,10 +76,20 @@ We first compute the pedestrian direction with the fast marching method. We assu
 
     docs/Flow equations, numerical schemes, and boundary conditions
     docs/Global and local direction
+    docs/Global variables and parameters used
+    docs/Bibliography 
     
+.. toctree::
+    :maxdepth: 3
+    :caption: Computer programming
+    
+    docs/Functions
+    docs/General loop
+   
+   
 make html
 .readthedocs.yml
 Read the Docs configuration file
-See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
 
 
