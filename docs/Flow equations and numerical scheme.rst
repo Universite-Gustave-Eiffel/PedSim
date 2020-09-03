@@ -13,7 +13,6 @@ Figures come from [1]
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/table%201%201.png
    :align: center
-
 Space discretization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
