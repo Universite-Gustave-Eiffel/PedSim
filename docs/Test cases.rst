@@ -17,12 +17,14 @@ The demand is constant over time, the same for the both layers and equal to 0.5 
 Geo_case 1: Without any obstacles
 ------------------------------------
 
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case1/geo%20case%201/Figure_5.png
+* alpha = 0.4
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case1/alpha%20%3D%200.4/Figure_5.png
    :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case1/geo%20case%201/Figure_15.png
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case1/alpha%20%3D%200.4/Figure_10.png
    :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case1/geo%20case%201/Figure_20.png
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case1/alpha%20%3D%200.4/Figure_15.png
    :align: center
+
 
 
 Geo_case 2: With an obtacle in the middle
@@ -85,7 +87,7 @@ Geo_case 3: With corridors defines
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%202%20geo_case%203%20alpha%3D%200.1/Figure_20.png
    :align: center
-https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%202%20geo_case%203%20alpha%3D%200.1/Figure_25.png
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%202%20geo_case%203%20alpha%3D%200.1/Figure_25.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%202%20geo_case%203%20alpha%3D%200.1/Figure_30.png
    :align: center
