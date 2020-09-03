@@ -5,6 +5,9 @@ We essentially used flow equations and numerical schemes described in Stéphane 
 
 The model combines a time discretization with a step time dt and a space discretization with a step dx and dy. A mesh modeled the network. We compute the density for each cell of the mesh (see about the organization of all the methods). 
 
+
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/table%201%201.png
+   :align: center
 The density in each cell is defined as ρ_i,j.
 
 Figures come from [1]
@@ -12,14 +15,9 @@ Figures come from [1]
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/figure%204.2%20%5B1%5D%20p%2076.png
    :align: center
    
-   
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/table%201%201.png
-   :align: center
-   
-   
+ 
 Space discretization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 Dimensional splitting
 --------------------------
@@ -32,20 +30,18 @@ We consider:
 - p_i_j_next the density value for the cell i,j for the layer n  after we compute the density in y_dimension
 - F_i-1/2,j_prev the flux (Lax-Friedrichs Flux ) at the interface between the cell i, j, and the cell i-1, j for the layer n before we apply the dimensional splitting method.
 
-
+It is described in equation (4.14) from [1].
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/4.14.png
    :align: center
-   Equation 4.14 [1]
-   
 
+   
 Lax-Friedrichs Flux
 -------------------------
 
-We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow: 
+We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow in equation (4.13) from [1]: 
 
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/4.13.png
-   :align: center
-equation 4.13 [1]
+   :align: cente
 
 WENO method
 ----------------------
@@ -68,8 +64,6 @@ We use the third order. Thus there are three time steps in each step. More descr
 
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/TVD.png
    :align: center
-
-
 
 Boundary conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
