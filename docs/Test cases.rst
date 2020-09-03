@@ -1,7 +1,7 @@
 Test cases
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-<a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Areas%20of%20improvement.rst">
+<a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Areas%20of%20improvement.rst"> To learn more about areas of improvement paths <a/>
 There are test cases predefined to see what the platform can do.
 Lien pour indications sur ce qu'il faut changer
 
