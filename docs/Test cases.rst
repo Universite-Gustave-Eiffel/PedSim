@@ -40,25 +40,11 @@ Geo_case 2: With an obstacle in the middle
 Geo_case 3: With corridors
 ---------------------------------
 
-* alpha = 0.75
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.75/alpha%20%3D%200.75/Figure_5.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.75/alpha%20%3D%200.75/Figure_15.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.75/alpha%20%3D%200.75/Figure_20.png
-   :align: center
-   
-
-* alpha = 0.1
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.1/alpha%20%3D%200.1/Figure_5.png
-   :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.1/alpha%20%3D%200.1/Figure_15.png
-   :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.1/alpha%20%3D%200.1/Figure_25.png
-   :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.1/alpha%20%3D%200.1/Figure_35.png
-   :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.1/alpha%20%3D%200.1/Figure_45.png
    :align: center
 
 
@@ -73,21 +59,22 @@ Elif Tmax/3 < t <= 2 * Tmax/3 (40 s) : demand = 0.1* rho_c * vmax * largeur_port
 Elif 2*Tmax/3 < t <=Tmax (60 s) : demand = 0.5 * rho_c * vmax * largeur_porte ped/s
 
 
-Geo_case 3: With corridors defines
+Geo_case 1: Without any obstacles 
 -----------------------------------------
 
-* alpha = 0.1
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%202%20geo_case%203%20alpha%3D%200.1/Figure_5.png
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_3.png
    :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%202%20geo_case%203%20alpha%3D%200.1/Figure_10.png
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_8.png
    :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%202%20geo_case%203%20alpha%3D%200.1/Figure_15.png
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_13.png
    :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%202%20geo_case%203%20alpha%3D%200.1/Figure_20.png
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_18.png
    :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%202%20geo_case%203%20alpha%3D%200.1/Figure_25.png
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_23.png
    :align: center
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%202%20geo_case%203%20alpha%3D%200.1/Figure_30.png
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_28.png
+   :align: center
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_33.png
    :align: center
 
 
