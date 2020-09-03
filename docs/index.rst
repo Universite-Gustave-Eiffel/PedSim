@@ -56,7 +56,7 @@ We first compute the pedestrian direction with the fast marching method. We assu
 
 .. _here: https://github.com/Ifsttar/PedSim
 
-.. _almost compliant: index.html
+.. _almost compliant: index.rst
 
 .. _GPL 3 license: License.html
 
