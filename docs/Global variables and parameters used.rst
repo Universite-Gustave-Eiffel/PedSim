@@ -5,9 +5,13 @@ Global variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 rho_j = 2.4 ped/m^2
+
 rho_c = 1.2 ped/m^2
+
 vmax = 1.34 m/s
+
 w = rho_c * vmax / (rho_j - rho_c)  m/s
+
 largeur_porte = 1 m
 
 Parameters
@@ -17,11 +21,17 @@ Crowdedness model parameters
 ------------------------------
 
 crwd = 1  # include crowdedness model
+
 alpha_d = 1  # weight on crowdedness in direction computation
+
 B = 0.5  # rate at which interaction reduces as function of distance
+
 lmbda = 0.2  # anisotropy parameter [0,1]
+
 W = 1  # radius of influence of other pedestrians >= 0
+
 alpha_0 = vmax / rho_j
+
 beta_0 = 2 * B * ((1 + lmbda) / (1 - lmbda)) * alpha_0
 
 
@@ -40,8 +50,8 @@ coeff = np.array([[1.8333, -1.1667, 0.3333],
 
 epsilon = 10 ** -6
 
-Others
------------------
+Others that can be changed
+-----------------------------
 dx = 0.5
 dy = dx
 
