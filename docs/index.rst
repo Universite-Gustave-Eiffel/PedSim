@@ -85,11 +85,6 @@ We first compute the pedestrian direction with the fast marching method. We assu
     
     docs/Functions
     docs/General loop
-   
-   
-make html
-.readthedocs.yml
-Read the Docs configuration file
 
 
 
