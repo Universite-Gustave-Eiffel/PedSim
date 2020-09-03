@@ -11,11 +11,8 @@ Figures come from [1]
 
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/figure%204.2%20%5B1%5D%20p%2076.png
    :align: center
-
-
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/table%201%201.png
    :align: center
-
 
 Space discretization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +60,7 @@ Total Variation Diminishing (TVD) Runge-Kutta
 ------------------------------------------------
 
 The TVD provides that the total variation of the solution does not increase in avoiding new extrema creation.
-We use the third order.
+We use the third order. Thus there are three time steps in each step.
 
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/TVD.png
    :align: center
