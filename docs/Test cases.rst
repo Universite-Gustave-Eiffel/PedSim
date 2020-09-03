@@ -1,10 +1,11 @@
 Test cases
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+<a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Areas%20of%20improvement.rst">
 There are test cases predefined to see what the platform can do.
 Lien pour indications sur ce qu'il faut changer
 
-The default value of alpha_d is 0.75. It is the weight on crowdedness in direction computation, to learn more about it see <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Global%20variables%20and%20parameters%20used.rst"> Global variables and parameters used<a/>, <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Functions.rst"> Functions used <a/> and <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Global%20and%20local%20direction.rst"> Global and local direction<a/>). 
+The default value of alpha_d is 0.75. It is the weight on crowdedness in direction computation, to learn more about it, see https://github.com/Ifsttar/PedSim/blob/master/docs/Global%20variables%20and%20parameters%20used.rst <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Global%20variables%20and%20parameters%20used.rst"> Global variables and parameters used<a/>, <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Functions.rst"> Functions used <a/> and <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Global%20and%20local%20direction.rst"> Global and local direction<a/>). 
 We will specify when we use another alpha_d value in the test case descriptions.
 We use parameters or global variables defined in <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Global%20variables%20and%20parameters%20used.rst"> Global variables and parameters used<a/>.
 
