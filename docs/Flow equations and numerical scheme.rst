@@ -31,6 +31,7 @@ We consider:
 - F_i-1/2,j_prev the flux (Lax-Friedrichs Flux ) at the interface between the cell i, j, and the cell i-1, j for the layer n before we apply the dimensional splitting method.
 
 It is described in equation (4.14) from [1].
+
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/4.14.png
    :align: center
 
