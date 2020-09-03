@@ -47,7 +47,7 @@ We first compute the pedestrian direction with the fast marching method. We assu
 
 # Computer programming
 
-## Functions
+## Functions used
 <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Functions.rst"> To learn more about functions used <a/>
   
 ## General loop
