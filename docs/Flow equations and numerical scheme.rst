@@ -28,19 +28,11 @@ We consider:
 - F_i-1/2,j_prev the flux (Lax-Friedrichs Flux ) at the interface between the cell i, j, and the cell i-1, j for the layer n before we apply the dimensional splitting method.
 
 It is described in equation (4.14) from [1].
-
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/4.14.png
-   :align: center
-
    
 Lax-Friedrichs Flux
 -------------------------
 
-We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow in equation (4.13) from [1]: 
-
-
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/4.13.png
-   :align: center
+We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow in equation (4.13) from [1].
    
 
 WENO method
@@ -60,7 +52,7 @@ Total Variation Diminishing (TVD) Runge-Kutta
 ------------------------------------------------
 
 The TVD provides that the total variation of the solution does not increase in avoiding new extrema creation.
-We use the third order. Thus there are three time steps in each step. The equations are described can be find in [5].
+We use the third order. Thus there are three time steps in each step. The equations are described in (4.16) [1] and more explanations can be find in [5].
 
 
 Boundary conditions
