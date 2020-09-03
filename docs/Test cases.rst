@@ -4,15 +4,15 @@ Test cases
 There are test cases predefined to see what the platform can do.
 Lien pour indications sur ce qu'il faut changer
 
-Default value of alpha_d (weight on crowdedness in direction computation  lien paramètres) is 0.75. It would be precised in test cases descriptions when we use an another alpha_d value.
-For any parameters or global see (lien paramètres) we use these ones
+The default value of alpha_d is 0.75. It is the weight on crowdedness in direction computation, to learn more about it see <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Global%20variables%20and%20parameters%20used.rst"> Global variables and parameters used<a/>, <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Functions.rst"> Functions used <a/> and <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Global%20and%20local%20direction.rst"> Global and local direction<a/>). 
+We will specify when we use another alpha_d value in the test case descriptions.
+We use parameters or global variables defined in <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Global%20variables%20and%20parameters%20used.rst"> Global variables and parameters used<a/>.
 
 Test_case == 1: the cross with demand constant over time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are two different layers: one for pedestrians who go from north to south and one for thoses wo go from west to east.
-The demand is constant over time, the same for the both layers and equal to 0.5 * rho_c * vmax * largeur_porte ped/s.
-
+There are two different layers: one for pedestrians who go from north to south and one for those who go from west to east.
+The demand is constant over time, the same for both layers, and equal to 0.5 * rho_c * Vmax * largeur_porte ped/s.
 
 Geo_case 1: Without any obstacles
 ------------------------------------
@@ -24,10 +24,9 @@ Geo_case 1: Without any obstacles
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case1/alpha%20%3D%200.4/Figure_15.png
    :align: center
+   
 
-
-
-Geo_case 2: With an obtacle in the middle
+Geo_case 2: With an obstacle in the middle
 --------------------------------------------------
 
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_2/geo%20case%202/Figure_5.png
@@ -38,20 +37,19 @@ Geo_case 2: With an obtacle in the middle
    :align: center
 
 
-Geo_case 3: With corridors defines
---------------------------------------------
+Geo_case 3: With corridors
+---------------------------------
 
 * alpha = 0.75
-
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.75/alpha%20%3D%200.75/Figure_5.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.75/alpha%20%3D%200.75/Figure_15.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.75/alpha%20%3D%200.75/Figure_20.png
    :align: center
+   
 
 * alpha = 0.1
-
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.1/alpha%20%3D%200.1/Figure_5.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case_3/alpha%20%3D%200.1/alpha%20%3D%200.1/Figure_15.png
@@ -67,7 +65,7 @@ Geo_case 3: With corridors defines
 Test_case == 2: the cross with demand not constant over time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are two different layers: one for pedestrians who go from north to south and one for thoses wo go from west to east.
+There are two different layers: one for pedestrians who go from north to south and one for those who go from west to east.
 The demand is the same for the two entrance doors.
 
 If 0 <= t <= Tmax/3 (20 s) :  demand = 0.8 * rho_c * vmax * largeur_porte ped/S
@@ -93,18 +91,16 @@ Geo_case 3: With corridors defines
    :align: center
 
 
-
 Test case == 3: the diagonal cross 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are two different layers: one for pedestrians who go from north west to south east and one for thoses wo go from east to south west.
+There are two different layers: one for pedestrians who go from north west to south east and one for those who go from east to south west.
 The demand is constant over time, the same for the both layers and equal to 0.5 * rho_c * vmax * largeur_porte ped/s.
 
 Geo_case 1: Without any obstacles
 -----------------------------------
 
 * alpha = 0.75
-
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%203/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_8.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%203/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_15.png
@@ -113,7 +109,6 @@ Geo_case 1: Without any obstacles
    :align: center
 
 * alpha = 0.1
-
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%203/Test%20case%203%20geo%20case%201%20alpha%20%3D%200.1/Figure_8.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%203/Test%20case%203%20geo%20case%201%20alpha%20%3D%200.1/Figure_15.png
@@ -132,7 +127,6 @@ Geo_case 1: Without any obstacles
 ------------------------------------------
 
 * alpha = 0.75
-
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%204/geo%20case%201%20alpha%20%3D%200.75/Figure_8.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%204/geo%20case%201%20alpha%20%3D%200.75/Figure_15.png
@@ -141,7 +135,6 @@ Geo_case 1: Without any obstacles
    :align: center
 
 * alpha = 0.1
-
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%204/geo%20case%201%20alpha%20%3D%200.1/Figure_8.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%204/geo%20case%201%20alpha%20%3D%200.1/Figure_15.png
@@ -153,14 +146,13 @@ Geo_case 1: Without any obstacles
 Test case == 5: multilayers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are four different layers: one for pedestrians who go from west to east, one for thoses from east to west, one for thoses from north to south and one for thoses from south to north.
+There are four different layers: one for pedestrians who go from west to east, one for those from east to west, one for those from north to south and one for those from south to north.
 The demand is constant over time, the same for the both layers and equal to 0.5 * rho_c * vmax * largeur_porte ped/s.
 
 Geo_case 1: Without any obstacles
 ------------------------------------------
 
 * alpha = 0.75
-
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%205%20geo%20case%201%20alpha%20%3D%200.75/Figure_2.png
    :align: center
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%205%20geo%20case%201%20alpha%20%3D%200.75/Figure_8.png
