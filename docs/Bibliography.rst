@@ -6,8 +6,4 @@
 
 [6]	 MATHEMATICS OF COMPUTATIONVolume 67, Number 221, January 1998, Pages 73–85S 0025-5718(98)00913-2TOTAL VARIATION DIMINISHING RUNGE-KUTTA SCHEMESSIGAL GOTTLIEB AND CHI-WANG SH
 [7]	Frirjirj
-[8]	Orfjorfjorj
-[9]	Rfjrjorjfofj
-[10]	Orjorjofrj
-[11]	Fjfrofrojro
-[12]	
+
