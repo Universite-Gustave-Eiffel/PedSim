@@ -150,18 +150,23 @@ Geo_case 1: Without any obstacles
    :align: center
    
 
-Test case == 5: Vertical crossing flows
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Geo_case 1: Without any obstacles
-------------------------------------------
-
-* alpha = 0.75
-
-Test case == 6: multilayers
+Test case == 5: multilayers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+There are four different layers: one for pedestrians who go from west to east, one for thoses from east to west, one for thoses from north to south and one for thoses from south to north.
+The demand is constant over time, the same for the both layers and equal to 0.5 * rho_c * vmax * largeur_porte ped/s.
+
 Geo_case 1: Without any obstacles
 ------------------------------------------
 
 * alpha = 0.75
+
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%205%20geo%20case%201%20alpha%20%3D%200.75/Figure_2.png
+   :align: center
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%205%20geo%20case%201%20alpha%20%3D%200.75/Figure_8.png
+   :align: center
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%205%20geo%20case%201%20alpha%20%3D%200.75/Figure_14.png
+   :align: center
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%205%20geo%20case%201%20alpha%20%3D%200.75/Figure_20.png
+   :align: center
+
