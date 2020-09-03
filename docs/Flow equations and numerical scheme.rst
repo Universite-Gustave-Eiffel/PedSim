@@ -7,21 +7,24 @@ The model combines a time discretization with a step time dt and a space discret
 
 The density in each cell is defined as ρ_i,j.
 
-   flux [Φ = v (vector) * ρ] = veh/s/m (vector)
-   density [ρ] = veh/m2 (scalar)
-   velocity [v] = m/s (vector)
-   equation ∂tρ + ∇ · Φ( ~ t, x, y, ρ) = 0
-   table 1.1 [1]
+Figures come from [1]
+
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/figure%204.2%20%5B1%5D%20p%2076.png
+   :align: center
+
+
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/table%201%201.png
+   :align: center
+
 
 Space discretization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-schéma comme figure 4.2 [1] p 76   
 
 Dimensional splitting
 --------------------------
 
-The dimensional splitting is a method that allows us to compute a two-dimensional flux by calculate it first in one dimension and then in the other. Thus, we compute the flux first in x-dimension, then all the densities are updated. Next, we calculate it in y dimension and update all the densities.
+The dimensional splitting is a method that allows us to compute a two-dimensional flux by calculate it first in one dimension and then in the other. Thus, we compute the flux first in x-dimension, then all the densities are updated. Next, we calculate it in y dimension and update all the densities. 
 
 We consider:
 - p_i_j_prev the density value for the cell i,j for the layer n before we apply the dimensional splitting method, 
@@ -29,16 +32,18 @@ We consider:
 - p_i_j_next the density value for the cell i,j for the layer n  after we compute the density in y_dimension
 - F_i-1/2,j_prev the flux (Lax-Friedrichs Flux ) at the interface between the cell i, j, and the cell i-1, j for the layer n before we apply the dimensional splitting method.
 
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/4.14.png
+   :align: center
    Equation 4.14 [1]
-   p_i_j_int = p_i_j_prev + dt/dx * (cos(teta_i-1/2,j) * F_i-1/2,j_prev - cos(teta_i+1/2,j) * F_i+1/2,j_prev)
-   p_i_j_next = p_i_j_int + dt/dy * (sin(teta_i,j-1/2) * F_i,j-1/2_int - sin(teta_i,j+1/2) * F_i,j+1/2_int)
+   
 
 Lax-Friedrichs Flux
 -------------------------
 
 We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow: 
 
-   F_i+1/2, j = 1/2 ( Φ(ρ_i+1_moins,j) + Φ(ρ_i_plus,j) - vmax (ρ_i_plus,j - ρ_i+1_moins,j)) 
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/4.13.png
+   :align: center
    equation 4.13 [1]
 
 WENO method
@@ -46,7 +51,7 @@ WENO method
 
 The Weighted Essentially Non-Oscillatory (WENO) method is a way to interpolate the discrete density. It is a high order numerical method that computes the density values at the interface of the cells (ρ_right and ρ_left) thanks to a spatial polynomial using the five neighboring densities. 
 Thanks to the Weno method, we get the densities needed to compute the flux at the interface using the Lax-Friedrichs Flux.
-The formula in [3].
+We can find all formulas in [3].
 This method is stable under standard CFL conditions.
 
 Time discretization
@@ -60,7 +65,9 @@ Total Variation Diminishing (TVD) Runge-Kutta
 The TVD provides that the total variation of the solution does not increase in avoiding new extrema creation.
 We use the third order.
 
-described here
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/TVD.png
+   :align: center
+More descriptions can be find in [5].
 
 
 Boundary conditions
