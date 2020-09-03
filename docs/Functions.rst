@@ -25,13 +25,12 @@ To generate a rectangular finite volume grid
 
 def generate_mesh(domain, inflows, outflows, obstacles, num_layers):
   return mesh
-(préciser tout ce que le mesh contient)
 
-lien pour note to the user
+
+See more in https://github.com/Ifsttar/PedSim/blob/master/docs/Use%20of%20the%20platform.rst 
 
 Functions for boundaries conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 To get time derivates of boundary conditions
 ----------------------------------------------
@@ -46,10 +45,9 @@ To compute density values in ghost cells
 
 def extrapolate_ghostcells(t, dt, rkstep, domain, density, demand, mesh, direction, layer):
   return density
-lagrangian interpolation???
+
 It uses time_dericative_bc (t, direction).
 
-lien pour boundary conditions
 
 Functions for flow equations and numerical schemes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,8 +102,8 @@ Function for the dimensional splitting
 
 def dimensional_splitting(density, F_i_j, dt, mesh, direction):
   return density
-
-lien pour flow equations and numerical schemes
+  
+See more in https://github.com/Ifsttar/PedSim/blob/master/docs/Flow%20equations%2C%20numerical%20scheme%20and%20boundary%20conditions.rst
 
 Functions for computing the direction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,11 +113,14 @@ To compute the fast marching scheme
 
 def crowdedness_direction(nlayers, densities, layer):
     return gradpsi
-
+It returns a gradient for a local direction term.
 
 def fast_marching_scheme(density, mesh, layer, nlayers, densities):
   return -gradphi[1], -gradphi[0]
-It uses estimate_speed(density), crowdedness_direction (nlayers, densities, layer)
+ 
+First, we compute the fast marching method thanks to the python module skfmm wich can calculate travel times. Then, we return the gradient of travel time and we add the one returns by the crowdedness_direction function. 
+It uses estimate_speed(density) and crowdedness_direction (nlayers, densities, layer).
+It returns gradient wich contains local and global direction terms. 
 
 To compute the direction vectors
 ---------------------------------
@@ -127,6 +128,8 @@ To compute the direction vectors
 def compute_direction_vectors(density, mesh, theta, layer, nlayers, densities):
   return phi_x, phi_y
 It uses fast_marching_scheme (density, mesh, layer, nlayers, densities)
+
+See more in https://github.com/Ifsttar/PedSim/blob/master/docs/Global%20and%20local%20direction.rst
   
 General loop
 ~~~~~~~~~~~~~~
@@ -147,8 +150,7 @@ def main():
 
 It uses test_cases (), create_geo (), generate_mesh (domain, inflows, outflows, obstacles, num_layers), time_integration(domain, mesh, demand, directions, num_layers), plot_solution(domain, solution, num_layers)
 
-
-lien boucle général
+See more in https://github.com/Ifsttar/PedSim/blob/master/docs/General%20loop.rst 
   
 To plot solution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
