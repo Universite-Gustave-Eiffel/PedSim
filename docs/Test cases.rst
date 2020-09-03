@@ -94,11 +94,33 @@ Geo_case 3: With corridors defines
 
 
 
-Test case == 3: the diagonal cross
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Test case == 3: the diagonal cross with demand constant over time
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There are two different layers: one for pedestrians who go from north west to south east and one for thoses wo go from east to south west.
+The demand is constant over time, the same for the both layers and equal to 0.5 * rho_c * vmax * largeur_porte ped/s.
 
 Geo_case 1: Without any obstacles
 -----------------------------------
+
+* alpha = 0.75
+
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%203/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_8.png
+   :align: center
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%203/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_15.png
+   :align: center
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%203/test%20case%203%20geo%20case%201%20alpha%20%3D%200.75/Figure_21.png
+   :align: center
+
+* alpha = 0.1
+
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%203/Test%20case%203%20geo%20case%201%20alpha%20%3D%200.1/Figure_8.png
+   :align: center
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%203/Test%20case%203%20geo%20case%201%20alpha%20%3D%200.1/Figure_15.png
+   :align: center
+.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/Test%20case%203/Test%20case%203%20geo%20case%201%20alpha%20%3D%200.1/Figure_21.png
+   :align: center
+
 
 Test case == 4: bidirectionnel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -108,3 +130,6 @@ Geo_case 1: Without any obstacles
 
 Geo_case 2: With an obtacle in the middle
 ------------------------------------------------
+
+Test case == 5: multilayers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
