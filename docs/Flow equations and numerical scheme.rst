@@ -41,8 +41,10 @@ Lax-Friedrichs Flux
 
 We can define the flux at the interface (F_i+1/2, j) between the cell i,j and the cell i+1,j computed by the Lax-Friedrichs Flux as follow in equation (4.13) from [1]: 
 
+
 .. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/rapports/4.13.png
-   :align: cente
+   :align: center
+   
 
 WENO method
 ----------------------
