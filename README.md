@@ -13,9 +13,6 @@ The platform enables us to describe the pedestrian traffic evolution in a networ
 ## Test cases
 The code integrates several test cases to become aware of what the platform can provide. Thus, there are simple tests with only two layers to examine what precisely happens at crossing points. We also find test cases with multiple layers, and somewhere pedestrian demands fluctuate over time.
 
-.. figure:: https://github.com/Ifsttar/PedSim/blob/master/docs/images/test_case%201/geo_case1/alpha%20%3D%200.4/Figure_5.png
-   :align: center
-   
 <a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Test%20cases.rst"> To learn more about the different test cases <a/>
 
 ## Use of the platform
