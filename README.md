@@ -29,7 +29,7 @@ This platform has been developed as part of a 3-month engineering internship, so
 
 We essentially used flow equations and numerical schemes described in Stéphane Mollier’s thesis, « Two-dimensional models for large-scale traffic networks » [1] to construct the model. Thus, we use the WENO scheme, the total variation diminishing (TVD) Runge Kutta time discretization, and the dimensional splitting. It is a fifth-order method in space and a third-order in time. That provides us the convergence, stability, and consistency of the solution. 
 
-<a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Flow%20equations%20and%20numerical%20scheme.rst"> To learn more about flow equations, numerical schemes and boundary conditions<a/>
+<a href="https://github.com/Ifsttar/PedSim/blob/master/docs/Flow%20equations%2C%20numerical%20scheme%20and%20boundary%20conditions.rst"> To learn more about flow equations, numerical schemes and boundary conditions<a/>
 
 ## Global and local direction 
 We use the paper of Hoogendoorn Serge P.et al., «Continuum theory for pedestrian traffic flow: Local route choice modeling and its implications » [2] about the pedestrian direction. It includes a global component determined before their start and a local one that adjusts the original direction according to local variations. 
