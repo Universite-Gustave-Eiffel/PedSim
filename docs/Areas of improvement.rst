@@ -7,7 +7,7 @@ What we can add on the code
 Stairs or lifts
 ----------------------
 
-To improve the code, we could add stairs or lifts, that is to say, to have entrance and exit doors not only in the network boundary but also inside this one. Thus, we could generate or computed inflows and inflows inside the mesh.
+To improve the code, we could add stairs or lifts, that is to say, to have entrance and exit doors not only in the network boundary but also inside this one. Thus, we could generate or computed inflows and outlows inside the mesh.
 
 Pedestrians counter
 ----------------------
